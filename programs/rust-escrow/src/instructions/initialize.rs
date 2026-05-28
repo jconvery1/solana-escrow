@@ -34,7 +34,7 @@ pub fn initialize(
 ) -> Result<()> {
     require!(amount > 0, EscrowError::InvalidAmount);
 
-    let now = Clock::get()?.unix_timestamp;
+    let now: i64 = Clock::get()?.unix_timestamp;
     require!(expiry > now, EscrowError::ExpiryInPast);
 
     // populate the fresh escrow account

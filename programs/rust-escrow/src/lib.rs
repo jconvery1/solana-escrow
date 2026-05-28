@@ -20,4 +20,15 @@ pub mod rust_escrow {
     ) -> Result<()> {
         instructions::initialize::initialize(ctx, seed, amount, expiry)
     }
+
+    pub fn fund(
+        ctx: Context<Fund>,
+        seed: u64,
+    ) -> Result<()> {
+        instructions::fund::fund(ctx, seed)
+    }
+
+    // pub fn cancel() {}
+
+    // pub fn release() {}
 }

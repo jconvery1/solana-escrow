@@ -11,5 +11,7 @@ pub enum EscrowError{
     #[msg("Token mint does not match the expected mint")]
     InvalidMint,
     #[msg("Arithmetic overflow occurred")]
-    Overflow
+    Overflow,
+    #[msg("Expiry must be in the future")]
+    ExpiryInPast,
 }

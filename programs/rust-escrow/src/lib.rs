@@ -30,5 +30,10 @@ pub mod rust_escrow {
 
     // pub fn cancel() {}
 
-    // pub fn release() {}
+    pub fn release(
+        ctx: Context<Release>,
+        seed: u64,
+    ) -> Result<()> {
+        instructions::release::release(ctx, seed)
+    }
 }

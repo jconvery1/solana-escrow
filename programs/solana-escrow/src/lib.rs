@@ -9,7 +9,7 @@ use instructions::*;
 declare_id!("CA4VBPqPv34hiyzqFkgq2MzjSEkViyT5HJyTgZazsLSH");
 
 #[program]
-pub mod rust_escrow {
+pub mod solana_escrow {
     use super::*;
 
     pub fn initialize(

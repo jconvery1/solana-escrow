@@ -28,12 +28,17 @@ pub mod rust_escrow {
         instructions::fund::fund(ctx, seed)
     }
 
-    // pub fn cancel() {}
-
     pub fn release(
         ctx: Context<Release>,
         seed: u64,
     ) -> Result<()> {
         instructions::release::release(ctx, seed)
+    }
+
+    pub fn cancel(
+        ctx: Context<Cancel>,
+        seed: u64,
+    ) -> Result<()> {
+        instructions::cancel::cancel(ctx, seed)
     }
 }

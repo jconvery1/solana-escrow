@@ -6,7 +6,7 @@ pub mod state;
 
 use instructions::*;
 
-declare_id!("CA4VBPqPv34hiyzqFkgq2MzjSEkViyT5HJyTgZazsLSH");
+declare_id!("cY8CtfbqNgb4RMN1nBepmE2KDJx5i1CA4j7QeMThGMj");
 
 #[program]
 pub mod solana_escrow {

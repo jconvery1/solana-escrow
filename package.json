@@ -2,7 +2,9 @@
   "license": "ISC",
   "scripts": {
     "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
-    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
+    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check",
+    "cli": "ANCHOR_PROVIDER_URL=${ANCHOR_PROVIDER_URL:-http://localhost:8899} ANCHOR_WALLET=${ANCHOR_WALLET:-$HOME/.config/solana/id.json} ts-node scripts/escrow-cli.ts",
+    "bench": "ANCHOR_PROVIDER_URL=${ANCHOR_PROVIDER_URL:-http://localhost:8899} ANCHOR_WALLET=${ANCHOR_WALLET:-$HOME/.config/solana/id.json} ts-node scripts/benchmark.ts"
   },
   "dependencies": {
     "@coral-xyz/anchor": "^0.32.1"

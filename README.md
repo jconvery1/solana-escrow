@@ -9,8 +9,10 @@ Non-custodial, with PDAs keyed on `(initializer, recipient, seed)` so one wallet
 
 The state machine keeps transitions correct.
 
+```text
 Created ──fund──▶ Funded ──release──▶ Released
-   └────cancel────▶ Cancelled
+   └──cancel──▶ Cancelled
+```
 
 `anchor test` to run tests.
 `solana-test-validator` starts the test validator.

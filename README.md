@@ -14,9 +14,9 @@ Created ──fund──▶ Funded ──release──▶ Released
    └──cancel──▶ Cancelled
 ```
 
-`anchor test` to run tests.
-`solana-test-validator` starts the test validator.
-`yarn bench` to view compute units (validator must be running).
+- `anchor test` — run the tests
+- `solana-test-validator` — start the local validator
+- `yarn bench` — view compute units (validator must be running)
 
 CU can be reduced by combining `initialize` and `fund` into a single instruction but this makes `cancel` an unguarded refund, so will leave separate for now.
 
